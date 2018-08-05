@@ -2,7 +2,7 @@ import dialogflow_v2 as dialogflow
 from dialogflow_v2.types import Context, Intent
 from .intent_helper import dataframe_to_intent
 import sys
-
+import time
 
 class IntentBuilder(object):
     """ Upload intent dataframe to Dialogflow agent """
@@ -78,6 +78,7 @@ class IntentBuilder(object):
             return
         for intent_name in intent_arr:
             print('Creating ' + intent_name)
+            time.sleep(1) 
             children_intent = self._get_children(intent_name)
 
             # Set context
