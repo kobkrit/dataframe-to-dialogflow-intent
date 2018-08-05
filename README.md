@@ -9,7 +9,7 @@ csv-to-dialogflow-intent helps create intents in Dialogflow by uploading csv or 
 4. [Create a service account](https://cloud.google.com/docs/authentication/getting-started) for your project in your GCP console
 5. Set up authentication in your terminal
 ```sh
-$ gcloud auth activate-service --key-file=KEY_FILE
+$ gcloud auth activate-service-account --key-file=KEY_FILE
 ```
 - **KEY_FILE**
 path to the private key file (JSON file obtained from creating a service account key)
